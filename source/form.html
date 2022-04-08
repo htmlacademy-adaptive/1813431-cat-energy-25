@@ -48,26 +48,26 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </div>
   </header>
   <main class="main-container">
     <div class="page-wrapper">
@@ -153,13 +153,12 @@
                   <span class="program__form__control__label">Витамины</span>
                 </label>
               </li>
-              </li>
             </ul>
           </fieldset>
 
           <button class="button button-send" type="button">Отправить заявку</button>
 
-          <p class="form__legend">
+          <p class="form-legend">
             <small>* — Обязательные поля</small>
           </p>
 
