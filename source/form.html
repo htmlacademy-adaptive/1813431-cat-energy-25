@@ -51,7 +51,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a href="#">
               Подбор программы
             </a>
           </li>
@@ -69,91 +69,104 @@
       </div>
     </nav>
   </header>
-
   <main class="main-container">
-    <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков Кэт энерджи</h1>
-    <section class="options">
-      <div class="options__wrapper">
-        <header class="options__header">
-          <h2 class="options__title">Функциональное питание для котов</h2>
-          <p class="options__slogan">Занялся собой? Займись котом!</p>
-          <a class="button-programs button-programs--top" href="#">Подобрать программу</a>
-        </header>
-        <a class="button-programs button-programs--bottom" href="#">Подобрать программу</a>
-        <ul class="options__list">
-          <li class="options__item">
-            <img class="options__image" src="../images/logo/logo-cat-slim.svg" alt="Логотип программы похудения.">
-            <h3 class="options__title">Похудение</h3>
-            <p class="options__description">Ваш кот весит больше собаки и<br>
-              почти утратил способность лазить<br>
-              по деревьям? Пора на диету! Cat<br>
-              Energy Slim поможет вашему<br>
-              питомцу сбросить лишний вес.</p>
-            <a class="options__link" href="#">Каталог slim</a>
-          </li>
-          <li class="options__item">
-            <img class="options__image" src="../images/logo/logo-cat-pro.svg" alt="Логотип программы набора массы.">
-            <h3 class="options__title">Набор массы</h3>
-            <p class="options__description">Заработать авторитет среди<br>
-              дворовых котов и даже собак?<br>
-              Серия Cat Energy Pro поможет<br>
-              вашему коту нарастить<br>
-              необходимые мышцы!</p>
-            <a class="options__link" href="#">Каталог pro</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <div class="advantages__wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <img src="../images/logo/logo-leaf.svg" alt="Логотип еды.">
-            <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages__item">
-            <img src="../images/logo/logo-water.svg" alt="Логотип воды.">
-            <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <img src="../images/logo/logo-food.svg" alt="Логотип приема пищи.">
-            <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantages__item">
-            <img src="../images/logo/logo-watch.svg" alt="Логотип часов.">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="example">
-      <h2 class="visually-hidden">Результаты</h2>
-      <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="stats">
-          <div class="stats__item">
-            <dt class="stats__number">5 кг</dt>
-            <dd class="stats__description">Снижение веса</dd>
-          </div>
-          <div class="stats__item">
-            <dt class="stats__number">60 дней</dt>
-            <dd class="stats__description">Затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__money-spent">Затраты на питание: 15 000 руб.</p>
-        <img src="../images/cat-before.jpg" alt="Кот До кэт энерджи.">
-        <div class="example__switcher">
-          <button class="example__button example__button__before" type="button">Было</button>
-          <button class="example__button example__button__after" type="button">Стало</button>
-        </div>
-      </div>
-    </section>
+    <div class="page-wrapper">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <section class="program">
+        <h2 class="visually-hidden">Выбор программы</h2>
+        <p class="program__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="program__form" action="https://echo.htmlacademy.ru">
+
+          <fieldset class="program__form__group">
+            <legend class="program__form__title"></legend>
+            <label class="program__form__desc" for="input-name">Имя:*</label>
+            <input class="program__form__field" type="text" name="name" id="input-name" placeholder="Барсик">
+            <label class="program__form__desc" for="input-weight">Вес (кг):*</label>
+            <input class="program__form__field" type="text" name="weight" id="input-weight" placeholder="7">
+            <label class="program__form__desc" for="input-age">Возраст (лет):*</label>
+            <input class="program__form__field" type="text" name="age" id="input-age" placeholder="7">
+          </fieldset>
+
+          <fieldset class="program__form__group">
+            <legend class="program__form__title"></legend>
+            <ul class="program__form__list">
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="radio" name="purpose" checked>
+                  <span class="program__form__control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="radio" name="purpose">
+                  <span class="program__form__control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="radio" name="purpose">
+                  <span class="program__form__control__label">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program__form__group">
+            <legend class="program__form__title">Контактные данные (владельца кота)</legend>
+            <label class="program__form__desc" for="input-email">e-mail:*</label>
+            <input class="program__form__field" type="email" name="e-mail" id="input-email"
+              placeholder="kuklachev@gmail.com">
+            <label class="program__form__desc" for="input-tel">Телефон:*</label>
+            <input class="program__form__field" type="tel" name="telephone" id="input-tel"
+              placeholder="8 (960) 900-60-90">
+          </fieldset>
+
+          <fieldset class="program__form__group">
+            <legend class="program__form__title">Комментарий</legend>
+            <textarea class="program__form__about-pet" name="about-pet" cols="32"
+              rows="8">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+
+          <fieldset class="program__form__group">
+            <legend class="program__form__title">Дополнительно</legend>
+            <ul class="program__form__list">
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="checkbox" name="sweetener" checked>
+                  <span class="program__form__control__label">Сахарозаменитель</span>
+                </label>
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="checkbox" name="water">
+                  <span class="program__form__control__label">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="checkbox" name="milk">
+                  <span class="program__form__control__label">Молоко</span>
+                </label>
+              </li>
+              <li class="program__form__item">
+                <label class="program__form__control">
+                  <input class="program__form__control__input" type="checkbox" name="vitamins">
+                  <span class="program__form__control__label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="button button-send" type="button">Отправить заявку</button>
+
+          <p class="form-legend">
+            <small>* — Обязательные поля</small>
+          </p>
+
+        </form>
+      </section>
+    </div>
+
+
     <section class="location">
       <div class="location__wrapper">
         <h2 class="visually-hidden">Наш адресс</h2>
@@ -163,6 +176,7 @@
       </div>
     </section>
   </main>
+
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
