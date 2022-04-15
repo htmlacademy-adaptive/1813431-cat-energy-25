@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat energy</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-wrapper main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="../images/logo/logo-cat-energy.svg" alt="Интертент-магазин Кэт энерджи"
+      <img class="main-header__logo-image" src="./img/logo/logo-cat-energy.svg" alt="Интертент-магазин Кэт энерджи"
         width="33" height="38">
+    </a>
+    <a class="main-header__logo">
       <svg class="main-header__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="currentColor"
         xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_135_3354)">
@@ -46,22 +49,23 @@
         </defs>
       </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually hidden">Открыть меню</span></button>
+    <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть
+        меню</span></button>
+    <nav class="main-nav main-nav__close">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="list main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="site-list__item__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__item__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__item__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -69,6 +73,7 @@
       </div>
     </nav>
   </header>
+
   <main class="main-container">
     <div class="page-wrapper">
       <h1 class="main-container__title">Подбор программы</h1>
@@ -177,7 +182,7 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-wrapper main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
         <svg class="main-footer__logo-text" width="128" height="24" viewBox="0 0 101 18" fill="currentColor"
@@ -216,8 +221,9 @@
           </defs>
         </svg>
       </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="list social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +249,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="main-footer__copyright copyright">
         <span class="copyright__text">HTML Academy</span>
         <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
@@ -255,6 +261,7 @@
     </div>
 
   </footer>
+
 </body>
 
 </html>

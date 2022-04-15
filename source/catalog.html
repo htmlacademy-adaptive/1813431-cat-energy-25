@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat energy</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-wrapper main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="../images/logo/logo-cat-energy.svg" alt="Интертент-магазин Кэт энерджи"
+      <img class="main-header__logo-image" src="./img/logo/logo-cat-energy.svg" alt="Интертент-магазин Кэт энерджи"
         width="33" height="38">
+    </a>
+    <a class="main-header__logo">
       <svg class="main-header__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="currentColor"
         xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_135_3354)">
@@ -46,22 +49,23 @@
         </defs>
       </svg>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually hidden">Открыть меню</span></button>
+    <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть
+        меню</span></button>
+    <nav class="main-nav main-nav__close">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="list main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="site-list__item__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__item__link" href="#">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__item__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -77,7 +81,7 @@
       <div class="products-wrapper">
         <ul class="products-list">
           <li class="products-item">
-            <img src="../images/catalog/cat-energy-chicken-small.jpg" alt="Кэт энерджи с курицей 500 грамм.">
+            <img src="./img/catalog/cat-energy-chicken-small.jpg" alt="Кэт энерджи с курицей 500 грамм.">
             <h3 class="product-item__title">Cat Energy PRO 500 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -90,7 +94,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="products-item">
-            <img src="../images/catalog/cat-energy-chicken-big.jpg" alt="Кэт энерджи с курицей 1000 грамм.">
+            <img src="./img/catalog/cat-energy-chicken-big.jpg" alt="Кэт энерджи с курицей 1000 грамм.">
             <h3 class="products-item__title">Cat Energy PRO 1000 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -103,7 +107,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="products-item">
-            <img src="../images/catalog/cat-energy-fish-small.jpg" alt="Кэт энерджи с рыбой 500 грамм.">
+            <img src="./img/catalog/cat-energy-fish-small.jpg" alt="Кэт энерджи с рыбой 500 грамм.">
             <h3 class="products-item__title">Cat Energy PRO 500 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -116,7 +120,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="products-item">
-            <img src="../images/catalog/cat-energy-fish-big.jpg" alt="Кэт энерджи с рыбой 1000 грамм.">
+            <img src="./img/catalog/cat-energy-fish-big.jpg" alt="Кэт энерджи с рыбой 1000 грамм.">
             <h3 class="products-item__title">Cat Energy PRO 1000 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -129,7 +133,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="products-item">
-            <img src="../images/catalog/cat-energy-buckwheat-small.jpg" alt="Кэт энерджи с гречкой 500 грамм.">
+            <img src="./img/catalog/cat-energy-buckwheat-small.jpg" alt="Кэт энерджи с гречкой 500 грамм.">
             <h3 class="products-item__title">Cat Energy slim 500 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -142,7 +146,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="products-item">
-            <img src="../images/catalog/cat-energy-buckwheat-big.jpg" alt="Кэт энерджи с гречкой 1000 грамм.">
+            <img src="./img/catalog/cat-energy-buckwheat-big.jpg" alt="Кэт энерджи с гречкой 1000 грамм.">
             <h3 class="products-item__title">Cat Energy slim 1000 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -155,7 +159,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="product-item">
-            <img src="../images/catalog/cat-energy-rice-small.jpg" alt="Кэт энерджи с рисом 500 грамм.">
+            <img src="./img/catalog/cat-energy-rice-small.jpg" alt="Кэт энерджи с рисом 500 грамм.">
             <h3 class="products-item__title">Cat Energy slim 500 г</h3>
             <dl class="features">
               <dt class="features__item">Масса</dt>
@@ -233,7 +237,7 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-wrapper main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
         <svg class="main-footer__logo-text" width="128" height="24" viewBox="0 0 101 18" fill="currentColor"
@@ -272,8 +276,9 @@
           </defs>
         </svg>
       </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="list social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +304,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="main-footer__copyright copyright">
         <span class="copyright__text">HTML Academy</span>
         <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
