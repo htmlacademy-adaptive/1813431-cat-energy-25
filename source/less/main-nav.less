@@ -26,3 +26,40 @@
 // .main-nav--close {
 //   display: none;
 // }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    position: static;
+    z-index: 0;
+    width: 440px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 478px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 8px 0;
+  }
+}

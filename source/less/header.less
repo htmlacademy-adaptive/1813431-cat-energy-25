@@ -4,8 +4,39 @@
   justify-content: space-between;
   padding: 10px 20px 17px;
   align-items: center;
+  box-sizing: border-box;
 }
 
-.header__logo {
-  display: flex;
+// .header__logos {
+//   display: flex;
+//   align-items: center;
+// }
+
+
+@media (min-width: @tablet-width) {
+  .header {
+    padding: 25px 30px 17px;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &:last-of-type {
+      margin-right: auto;
+    }
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    padding: 25px 110px 17px;
+    justify-content: space-between;
+  }
 }

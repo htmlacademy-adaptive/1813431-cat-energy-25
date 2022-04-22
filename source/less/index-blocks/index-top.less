@@ -24,3 +24,39 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .index-top__header {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .index-top__text {
+    padding-left: 119px;
+    text-align: left;
+  }
+
+  .index-top__title {
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+    color: #000000;
+  }
+
+  .index-top__slogan {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 29px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-top__header {
+    display: flex;
+    flex-direction: row;
+  }
+}
