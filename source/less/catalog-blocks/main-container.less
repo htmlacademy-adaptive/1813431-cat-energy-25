@@ -1,4 +1,4 @@
-.main-container__wrapper {
+.main-container__heading {
   padding: 27px 20px 41px;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
@@ -7,5 +7,21 @@
 .main-container__title {
   font-size: 36px;
   line-height: 36px;
-  text-transform: none;
 }
+
+@media (min-width: @tablet-width) {
+  .main-container__heading {
+    padding: 27px 20px 41px;
+    border: none;
+  }
+
+  .main-container__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+
+
+// }
