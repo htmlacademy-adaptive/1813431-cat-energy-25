@@ -10,9 +10,47 @@
     position: absolute;
     width: 158px;
     top: 15px;
-    right: -22px;
+    right: -12px;
     height: 2px;
     background-color: #68b738;
     content: "";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-comments {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 65px;
+  }
+
+  .form-comments__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    &::after {
+      width: 478px;
+      top: 15px;
+      right: -67px;
+    }
+  }
+
+  .form-comments__about-pet {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-comments {
+    padding-bottom: 67px;
+  }
+
+  .form-comments__title {
+    &::after {
+      width: 1108px;
+      top: 20px;
+      left: 222px;
+    }
   }
 }

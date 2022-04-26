@@ -20,8 +20,54 @@
 }
 
 .promo__text {
+  line-height: 20px;
   position: absolute;
   bottom: 55px;
   margin: 0;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    margin-bottom: 76px;
+    padding: 0 30px;
+  }
+
+  .promo__background {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 57px 124px 59px 88px;
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/backgrounds/promo-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-color: #68b738;
+
+    &::before {
+      position: absolute;
+      top: 59px;
+      left: 101px;
+      content: url("../img/icon/icon-gift.svg");
+    }
+  }
+
+  .promo__text {
+    position: static;
+    width: 161px;
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .promo__background {
+    width: 245px;
+  }
 }
