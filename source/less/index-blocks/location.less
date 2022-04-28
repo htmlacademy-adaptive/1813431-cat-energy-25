@@ -1,5 +1,8 @@
 .location__wrapper {
-  padding: 26px 70px;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .location__invitation,
@@ -26,9 +29,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .location__text {
-    display: flex;
-    justify-content: space-between;
+  .location__wrapper {
+    padding: 56px 70px;
   }
 
   .location__invitation {
@@ -61,14 +63,8 @@
     width: 565px;
     height: 198px;
     display: flex;
-    align-items: center;
     padding: 56px 80px;
     background-color: #ffffff;
-  }
-
-  .location__text {
-    display: flex;
-    justify-content: space-between;
   }
 
   .location__map {

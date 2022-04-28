@@ -1,5 +1,7 @@
 .form-contacts {
   position: relative;
+  margin: 0;
+  padding: 0;
   padding-bottom: 24px;
 }
 
@@ -11,9 +13,70 @@
     position: absolute;
     width: 99px;
     top: 41px;
-    right: -117px;
+    right: -20px;
     height: 2px;
     background-color: #68b738;
     content: "";
+  }
+}
+
+.form-contacts__item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-contacts {
+    padding-bottom: 65px;
+  }
+
+  .form-contacts__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    &::after {
+      width: 145px;
+      top: 47px;
+      right: -185px;
+    }
+  }
+
+  .form-contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-contacts {
+    padding-bottom: 77px;
+  }
+
+  .form-contacts__title {
+    padding: 0;
+
+    &::after {
+      width: 778px;
+      top: 24px;
+      left: 552px;
+    }
+  }
+
+  .form-contacts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 76px;
+  }
+
+  .form-contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }

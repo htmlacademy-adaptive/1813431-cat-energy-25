@@ -56,7 +56,7 @@
       <div class="main-nav__wrapper">
         <ul class="list main-nav__list site-list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
@@ -65,7 +65,7 @@
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item site-list__item--active">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="#">
               Подбор программы
             </a>
@@ -84,89 +84,107 @@
 
         <form class="program__form" action="https://echo.htmlacademy.ru">
 
-          <fieldset class="program__group form-main-info">
-            <legend class="program__title"></legend>
-            <label class="program__desc" for="input-name">Имя:*</label>
-            <input class="program__field" type="text" name="name" id="input-name" placeholder="Барсик"><br>
-            <label class="program__desc" for="input-weight">Вес (кг):*</label>
-            <input class="program__field" type="text" name="weight" id="input-weight" placeholder="7"><br>
-            <label class="program__desc" for="input-age">Возраст (лет):*</label>
-            <input class="program__field" type="text" name="age" id="input-age" placeholder="7"><br>
-          </fieldset>
+          <div class="main-programs">
+            <fieldset class="program__group form-main">
+              <legend class="program__title form-main__title"></legend>
+              <ul class="list form-main__list">
+                <li class="form-main__item">
+                  <label class="label form-main__desc" for="input-name">Имя:*</label>
+                  <input class="input form-main__field" type="text" name="name" id="input-name" placeholder="Барсик">
+                </li>
+                <li class="form-main__item">
+                  <label class="label form-main__desc" for="input-weight">Вес (кг):*</label>
+                  <input class="input form-main__field" type="text" name="weight" id="input-weight" placeholder="7">
+                </li>
+                <li class="form-main__item">
+                  <label class="label  form-main__desc" for="input-age">Возраст (лет):*</label>
+                  <input class="input form-main__field" type="text" name="age" id="input-age" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="program__group form-programs">
-            <legend class="program__title"></legend>
-            <ul class="list program__list">
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="radio" name="purpose" checked>
-                  <span class="program__control__label">Похудение</span>
-                </label>
+            <fieldset class="program__group form-programs">
+              <legend class="program__title form-programs__title"></legend>
+              <ul class="list form-programs__list">
+                <li class="form-programs__item">
+                  <label class="label form-programs__control">
+                    <input class="form-programs__input" type="radio" name="purpose" checked>
+                    <span class="form-programs__label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-programs__item">
+                  <label class="label form-programs__control">
+                    <input class="form-programs__input" type="radio" name="purpose">
+                    <span class="form-programs__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-programs__item">
+                  <label class="label form-programs__control">
+                    <input class="form-programs__input" type="radio" name="purpose">
+                    <span class="form-programs__label">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <fieldset class="program__group form-contacts">
+            <legend class="program__title form-contacts__title">Контактные данные (владельца кота)</legend>
+            <ul class="list form-contacts__list">
+              <li class="form-contacts__item">
+                <label class="label form-contacts__desc" for="input-email">e-mail:*</label>
+                <input class="input form-contacts__field" type="email" name="e-mail" id="input-email"
+                  placeholder="kuklachev@gmail.com">
               </li>
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="radio" name="purpose">
-                  <span class="program__control__label">Набор массы</span>
-                </label>
-              </li>
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="radio" name="purpose">
-                  <span class="program__control__label">Не знаю (нужен ваш совет)</span>
-                </label>
+              <li class="form-contacts__item">
+                <label class="label form-contacts__desc" for="input-tel">Телефон:*</label>
+                <input class="input form-contacts__field" type="tel" name="telephone" id="input-tel"
+                  placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="program__group form-contacts">
-            <legend class="program__title form-contacts__title">Контактные данные<br> (владельца кота)</legend>
-            <label class="program__desc" for="input-email">e-mail:*</label>
-            <input class="program__field" type="email" name="e-mail" id="input-email" placeholder="kuklachev@gmail.com">
-            <label class="program__desc" for="input-tel">Телефон:*</label>
-            <input class="program__field" type="tel" name="telephone" id="input-tel" placeholder="8 (960) 900-60-90">
-          </fieldset>
-
           <fieldset class="program__group form-comments">
             <legend class="program__title form-comments__title">Комментарий</legend>
-            <textarea class="program__about-pet" name="about-pet" cols="32"
+            <textarea class="form-comments__about-pet" name="about-pet" cols="32"
               rows="8">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
           <fieldset class="program__group form-additional">
             <legend class="program__title form-additional__title">Дополнительно</legend>
-            <ul class="list program__list">
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="checkbox" name="sweetener" checked>
-                  <span class="program__control__label">Сахарозаменитель</span>
+            <ul class="list form-additional__list">
+              <li class="form-additional__item">
+                <label class="form-additional__control">
+                  <input class="form-additional__input" type="checkbox" name="sweetener" checked>
+                  <span class="form-additional__label">Сахарозаменитель</span>
                 </label>
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="checkbox" name="water">
-                  <span class="program__control__label">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="checkbox" name="milk">
-                  <span class="program__control__label">Молоко</span>
+              <li class="form-additional__item">
+                <label class="form-additional__control">
+                  <input class="form-additional__input" type="checkbox" name="water">
+                  <span class="form-additional__label">Питьевая вода</span>
                 </label>
               </li>
-              <li class="program__item">
-                <label class="program__control">
-                  <input class="program__control__input" type="checkbox" name="vitamins">
-                  <span class="program__control__label">Витамины</span>
+              <li class="form-additional__item">
+                <label class="form-additional__control">
+                  <input class="form-additional__input" type="checkbox" name="milk">
+                  <span class="form-additional__label">Молоко</span>
+                </label>
+              </li>
+              <li class="form-additional__item">
+                <label class="form-additional__control">
+                  <input class="form-additional__input" type="checkbox" name="vitamins">
+                  <span class="form-additional__label">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <button class="button button-send" type="submit">Отправить заявку</button>
-
-          <p class="form-legend">
-            <small>* — Обязательные поля</small>
-          </p>
-
+          <div class="button-legend">
+            <button class="button button-legend__btn" type="submit">Отправить заявку</button>
+            <p class="button-legend__text">
+              * — Обязательные поля
+            </p>
+          </div>
         </form>
       </section>
     </div>

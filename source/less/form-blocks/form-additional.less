@@ -15,3 +15,48 @@
     content: "";
   }
 }
+
+@media (min-width: @tablet-width) {
+  .form-additional {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 54px;
+  }
+
+  .form-additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+
+    &::after {
+      width: 478px;
+      top: 15px;
+      left: 220px;
+    }
+  }
+
+  .form-additional__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 124px;
+  }
+
+  .form-additional__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-additional__title {
+    &::after {
+      width: 1078px;
+      top: 21px;
+      left: 252px;
+    }
+  }
+
+  .form-additional__list {
+    display: flex;
+  }
+}

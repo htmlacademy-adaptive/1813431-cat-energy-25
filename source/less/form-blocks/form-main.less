@@ -1,6 +1,8 @@
-.form-programs {
+.form-main {
   position: relative;
-  padding-top: 28px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
 
   &::before {
     position: absolute;
@@ -13,10 +15,19 @@
   }
 }
 
+.form-main__item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: max-content 1fr;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
 @media (min-width: @tablet-width) {
-  .form-programs {
-    margin: 0;
-    margin-bottom: 75px;
+  .form-main {
+    margin-bottom: 72px;
     padding: 0;
 
     &::before {
@@ -24,14 +35,15 @@
     }
   }
 
-  .form-programs__list {
-    padding: 25px 28px;
-    border: 1px solid #e7e7e7;
+  .form-main__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-programs {
+  .form-main {
     margin: 0;
   }
 }
