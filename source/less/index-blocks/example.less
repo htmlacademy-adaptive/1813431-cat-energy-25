@@ -13,13 +13,42 @@
 }
 
 .example__money-spent {
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Oswald", sans-serif;
   margin: 0;
   margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__stats {
+  font-family: "Oswald", sans-serif;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  gap: 0 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.example__item {
+  // margin: 0;
+  // padding: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__item__title {
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-transform: lowercase;
+}
+
+.example__item__text {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: lowercase;
 }
 
 .example__img {
@@ -68,6 +97,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .example__stats {
+    grid-template-columns: 162px 162px;
+    gap: 0 42px;
+  }
+
+  .example__item__title {
+    font-size: 14px;
+    line-height: 14px;
+    color: #444444;
+    text-transform: lowercase;
+  }
+
+  .example__item__text {
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: lowercase;
   }
 
   .example__money-spent {
