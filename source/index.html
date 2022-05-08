@@ -54,7 +54,7 @@
     <!-- </div> -->
     <button class="header__toggle" type="button"><span class="visually-hidden">Открыть
         меню</span></button>
-    <nav class="main-nav main-nav--close">
+    <nav class="main-nav main-nav--close main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="list main-nav__list site-list">
           <li class="main-nav__item main-nav__item--active">
@@ -88,11 +88,11 @@
           <p class="index-top__slogan">Занялся собой? Займись котом!</p>
         </div>
         <img class="index-top__img" src="./img/index-product-mobile.png" alt="Кэт энерджи, продукт">
-        <a class="button button-programs button-programs--top" href="#">Подобрать программу</a>
+        <!-- <a class="button button-programs button-programs--top" href="#">Подобрать программу</a> -->
       </header>
     </section>
 
-    <a class="button button-programs button-programs--bottom" href="#">Подобрать программу</a>
+    <a class="button button-programs button-programs--index" href="#">Подобрать программу</a>
 
     <section class="options">
       <div class="options__wrapper">
@@ -171,7 +171,7 @@
             по-прежнему спит по 16 часов в день.
           </p>
           <div class="example__results">
-            <dl class="example__stats">
+            <!-- <dl class="example__stats">
               <div class="example__item">
                 <dt class="example__number">5 кг</dt>
                 <dd class="example__description">Снижение веса</dd>
@@ -180,7 +180,17 @@
                 <dt class="example__number">60 дней</dt>
                 <dd class="example__description">Затрачено времени</dd>
               </div>
-            </dl>
+            </dl> -->
+            <div class="example__stats">
+              <fieldset class="example__item">
+                <legend class="example__item__title">Снижение веса</legend>
+                <span class="example__item__text">5 кг</span>
+              </fieldset>
+              <fieldset class="example__item">
+                <legend class="example__item__title">Затрачено времени</legend>
+                <span class="example__item__text">60 дней</span>
+              </fieldset>
+            </div>
             <p class="example__money-spent">Затраты на питание: 15 000 руб.</p>
           </div>
         </div>

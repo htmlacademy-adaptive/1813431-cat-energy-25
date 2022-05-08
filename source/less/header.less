@@ -1,9 +1,29 @@
 .header {
   position: relative;
+  min-height: 66px;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px 17px;
   align-items: center;
+}
+
+.header__toggle {
+  position: relative;
+  width: 24px;
+  height: 16px;
+  background-color: #ffffff;
+  border: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    content: "";
+  }
 }
 
 @media (min-width: @tablet-width) {
