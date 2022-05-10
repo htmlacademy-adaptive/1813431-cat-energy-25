@@ -27,21 +27,31 @@
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 0 32px;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 34px;
 }
 
 .example__item {
+  position: relative;
   // margin: 0;
   // padding: 0;
+  // margin-bottom: 34px;
+  padding-top: 15px;
+  padding-bottom: 18px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-align: center;
 }
 
 .example__item__title {
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 12px;
   line-height: 12px;
+  padding: 0 15px;
   color: #444444;
+  background-color: #eaeaea;
   text-transform: lowercase;
 }
 
@@ -105,9 +115,14 @@
   }
 
   .example__item__title {
+    bottom: -6px;
+    left: 33px;
+    transform: translateX(0);
     font-size: 14px;
     line-height: 14px;
+    padding: 0 8px;
     color: #444444;
+    background-color: #ffffff;
     text-transform: lowercase;
   }
 
@@ -147,6 +162,10 @@
   .example__results {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .example__item__title {
+    bottom: -7px;
   }
 
   .example__money-spent {
