@@ -32,9 +32,6 @@
 
 .example__item {
   position: relative;
-  // margin: 0;
-  // padding: 0;
-  // margin-bottom: 34px;
   padding-top: 15px;
   padding-bottom: 18px;
   border: 1px solid #cdcdcd;
@@ -44,15 +41,25 @@
 
 .example__item__title {
   position: absolute;
-  bottom: -13px;
-  left: 50%;
-  transform: translateX(-50%);
+  font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 12px;
   padding: 0 15px;
   color: #444444;
   background-color: #eaeaea;
   text-transform: lowercase;
+
+  &--weight {
+    bottom: -14px;
+    left: 19px;
+    width: 84px;
+  }
+
+  &--days {
+    bottom: -14px;
+    left: 19px;
+    width: 87px;
+  }
 }
 
 .example__item__text {
@@ -115,15 +122,22 @@
   }
 
   .example__item__title {
-    bottom: -6px;
-    left: 33px;
-    transform: translateX(0);
     font-size: 14px;
     line-height: 14px;
     padding: 0 8px;
-    color: #444444;
     background-color: #ffffff;
-    text-transform: lowercase;
+
+    &--weight {
+      bottom: -7px;
+      left: 23px;
+      width: 115px;
+    }
+
+    &--days {
+      bottom: -7px;
+      left: 8px;
+      width: 145px;
+    }
   }
 
   .example__item__text {
@@ -162,10 +176,6 @@
   .example__results {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .example__item__title {
-    bottom: -7px;
   }
 
   .example__money-spent {
