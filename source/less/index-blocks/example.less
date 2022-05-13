@@ -27,22 +27,39 @@
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 0 32px;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 34px;
 }
 
 .example__item {
-  // margin: 0;
-  // padding: 0;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 18px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-align: center;
 }
 
 .example__item__title {
+  position: absolute;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
+  padding: 0 15px;
   color: #444444;
+  background-color: #eaeaea;
   text-transform: lowercase;
+
+  &--weight {
+    bottom: -14px;
+    left: 19px;
+    width: 84px;
+  }
+
+  &--days {
+    bottom: -14px;
+    left: 19px;
+    width: 87px;
+  }
 }
 
 .example__item__text {
@@ -107,8 +124,20 @@
   .example__item__title {
     font-size: 14px;
     line-height: 14px;
-    color: #444444;
-    text-transform: lowercase;
+    padding: 0 8px;
+    background-color: #ffffff;
+
+    &--weight {
+      bottom: -7px;
+      left: 23px;
+      width: 115px;
+    }
+
+    &--days {
+      bottom: -7px;
+      left: 8px;
+      width: 145px;
+    }
   }
 
   .example__item__text {

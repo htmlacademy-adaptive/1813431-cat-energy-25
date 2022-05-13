@@ -49,6 +49,7 @@
     position: relative;
     flex-direction: column;
     counter-increment: advantages;
+    z-index: 0;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -63,7 +64,7 @@
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;
-      // z-index: -1;
+      z-index: -1;
       content: counter(advantages);
     }
   }
