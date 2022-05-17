@@ -41,13 +41,14 @@
   font-size: 12px;
   line-height: 16px;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   color: #444444;
 }
 
 .products__features__value {
   justify-self: end;
+  margin: 0;
 }
 
 .products__item-all {
@@ -79,6 +80,7 @@
 .products__item-all__text {
   font-size: 12px;
   line-height: 16px;
+  width: 167px;
   margin: 0;
   margin-bottom: 21px;
 }
@@ -100,11 +102,12 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 141px 60px;
   }
 
   .products__item {
-    padding: 0 37px 39px 39px;
+    position: relative;
+    padding: 161px 37px 39px 39px;
     background-color: #f2f2f2;
     text-align: center;
 
@@ -121,6 +124,35 @@
     margin-bottom: 42px;
   }
 
+  .products__img {
+    position: absolute;
+    bottom: 300px;
+    left: 81px;
+
+    &--small-chicken,
+    &--small-buckwheat {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--small-fish,
+    &--small-rice {
+      width: 163px;
+      height: 174px;
+    }
+
+    &--big-chicken {
+      width: 168px;
+      height: 206px;
+    }
+
+    &--big-fish,
+    &--big-buckwheat {
+      width: 168px;
+      height: 200px;
+    }
+  }
+
   .products__title {
     font-size: 20px;
     line-height: 24px;
@@ -130,7 +162,7 @@
 
   .products__features {
     font-size: 16px;
-    grid-template-columns: 124px 124px;
+    grid-template-columns: 125px 125px;
     gap: 16px 0;
   }
 
@@ -156,12 +188,12 @@
 
     &::after {
       position: absolute;
-      top: 82px;
-      left: 140px;
-      width: 30px;
-      height: 30px;
+      top: 52px;
+      left: 132px;
+      width: 60px;
+      height: 60px;
       background-repeat: no-repeat;
-      content: url("../img/icon/plus.svg");
+      content: url("../../img/icon/icon-plus-tablet.svg");
     }
   }
 
@@ -186,11 +218,11 @@
   .products__list {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 62px 80px;
+    gap: 143px 80px;
   }
 
   .products__item {
-    padding: 0 35px 40px 40px;
+    padding: 162px 35px 40px 40px;
     background-color: #f2f2f2;
     text-align: center;
 
@@ -200,8 +232,24 @@
     }
   }
 
+  .products__img {
+    left: 40px;
+    bottom: 310px;
+
+    &--big-chicken {
+      width: 172px;
+      height: 202px;
+    }
+
+    &--big-fish,
+    &--big-buckwheat {
+      width: 172px;
+      height: 196px;
+    }
+  }
+///////////////////////////////////////////////////////////////////////
   .products__features {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 84.5px 84.5px;
   }
 
   .products__features__item {
@@ -216,18 +264,14 @@
   }
 
   .products__item-all {
-    padding-top: 161px;
+    padding-top: 160px;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
 
     &::after {
       position: absolute;
-      top: 81px;
-      left: 100px;
-      width: 30px;
-      height: 30px;
-      background-repeat: no-repeat;
-      content: url("../img/icon/plus.svg");
+      top: 51px;
+      left: 92px;
     }
   }
 }

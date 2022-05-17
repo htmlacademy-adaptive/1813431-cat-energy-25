@@ -71,11 +71,25 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 478px;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .main-nav__item {
+
+    &--active {
+
+      &::after {
+
+        background-color: #ffffff;
+      }
+    }
   }
 
   .main-nav__link {
     font-size: 20px;
     line-height: 30px;
     padding: 8px 0;
+    color: #ffffff;
   }
 }

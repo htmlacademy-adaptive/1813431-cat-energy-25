@@ -50,11 +50,56 @@
     margin-bottom: 52px;
     color: #000000;
   }
+
+  .index-top__img {
+    position: relative;
+    bottom: 25px;
+    width: 709px;
+    height: 609px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .index-top {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -232px;
+      right: 0;
+      content: url(/img/backgrounds/index-background-desktop.jpg);
+    }
+  }
+
+  // @media (min-resolution: 2dppx) {
+  //   .index-top {
+
+  //       &::before {
+  //         background-size: 720px 694px;
+  //         content: url(/img/backgrounds/index-background-desktop@2x.jpg);
+  //       }
+  //     }
+  // }
+
   .index-top__header {
     display: flex;
     flex-direction: row;
+    padding: 0;
+  }
+
+  .index-top__text {
+    padding-left: 190px;
+  }
+
+  .index-top__title {
+    width: 420px;
+  }
+
+  .index-top__img {
+    position: relative;
+    bottom: 75px;
+    right: 52px;
+    width: 552px;
+    height: 499px;
   }
 }
