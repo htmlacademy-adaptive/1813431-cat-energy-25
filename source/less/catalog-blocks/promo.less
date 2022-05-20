@@ -11,11 +11,18 @@
   background-repeat: no-repeat;
   background-color: #68b738;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/promo-background-mobile@2x.jpg");
+    background-size: 280px 290px;
+  }
+
   &::before {
     position: absolute;
     top: 59px;
     left: 101px;
-    content: url("../img/icon/icon-gift.svg");
+    width: 78px;
+    height: 80px;
+    content: url("../../img/icon/icon-gift.svg");
   }
 }
 
@@ -31,6 +38,7 @@
   .promo__wrapper {
     margin-bottom: 76px;
     padding: 0 30px;
+    text-align: left;
   }
 
   .promo__background {
@@ -39,17 +47,22 @@
     justify-content: flex-end;
     align-items: center;
     padding: 57px 124px 59px 88px;
-    width: 100%;
+    width: 707px;
     height: 200px;
-    background-image: url("../img/backgrounds/promo-background-mobile.jpg");
+    background-image: url("../img/backgrounds/promo-background-tablet.jpg");
     background-repeat: no-repeat;
     background-color: #68b738;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/promo-background-tablet@2x.jpg");
+      background-size: 707px 200px;
+    }
+
     &::before {
-      position: absolute;
       top: 59px;
       left: 101px;
-      content: url("../img/icon/icon-gift.svg");
+      width: 80px;
+      height: 82px;
     }
   }
 
@@ -65,9 +78,25 @@
   .promo__wrapper {
     margin: 0;
     padding: 0;
+    text-align: center;
   }
 
   .promo__background {
     width: 245px;
+    height: 288px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 43px 42px 41px;
+    background-image: url("../img/backgrounds/promo-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/promo-background-desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
+
+    &::before {
+      top: 63px;
+      left: 84px;
+    }
   }
 }
